@@ -21,17 +21,26 @@ wstring text = L"Hello World!";
 
 int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR szCmdline, int iCmdShow) {
 
-	IDesktop& desktop = IDesktop::Get();  // Initialize desktop.
+	// Initialize desktop.
+	IDesktop& desktop = IDesktop::Get();  
 
+	// Define window style.
 	TextBoxStyle style;
 	style.size.normal(200px, 100px);
 	style.position.setHorizontalCenter().setVerticalCenter();
 	style.background.setColor(ColorSet::White);
-	auto textbox = ITextBox::Create(&desktop, style, nullptr);
 
+	// Create a window.
+	auto textbox = ITextBox::Create(&desktop, style, nullptr);
+	// Or:
+	// auto textbox = ITextBox::Create(nullptr, style, nullptr);
+	// desktop.AddChild(textbox.get());
+
+	// Set and update text.
 	textbox->SetText(text);
 	textbox->TextUpdated();
 
+	// Enter message loop.
 	auto ret = desktop.MessageLoop();
 
 	return ret;
