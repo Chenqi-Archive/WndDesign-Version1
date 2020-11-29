@@ -56,9 +56,6 @@
     <ClInclude Include="object\EditBox.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="object\MessageBox.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="object\object.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -81,9 +78,6 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="system\clipboard.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="object\TextEditor.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="style\editbox_style.h">
