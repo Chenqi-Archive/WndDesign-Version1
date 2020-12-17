@@ -12,7 +12,7 @@ An effective and friendly c++ Win32 gui library based on Direct2D and DirectWrit
 
 一些使用样例，请参考[样例代码](./example.md)。
 
-关于WndDesign的创建历史及当前的问题，请参考[构建历史](./history.md)。
+关于我构建这个项目的历史、体会，以及当前的问题，请参考[构建历史](./history.md)。
 
 
 
