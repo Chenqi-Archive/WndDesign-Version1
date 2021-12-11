@@ -1,0 +1,5 @@
+LIBRARY "WndDesign"
+
+EXPORTS
+
+WinMain

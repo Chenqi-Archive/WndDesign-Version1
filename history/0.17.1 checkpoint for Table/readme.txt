@@ -1,0 +1,1 @@
+This version of table uses list to store separate rows, but it seems not very effective. The new version will use vector to store both row and columns.
